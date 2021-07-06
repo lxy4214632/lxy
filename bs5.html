@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #photoDiv{
+            text-align: center;
+
+        }
+        .img-circle:hover{
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        function c() {
+            var s1=document.getElementById("asss").value;
+            var s2=parseFloat(s1);
+            var s3=0.08*s2;
+            document.getElementById("dasd").innerHTML=s3;
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div id="photoDiv" >
+        <img src="0.jpg" class="img-circle"  >
+    </div>
+    <div id="main">
+        <table class="table table-bordered text-center">
+        <tr>
+            <td >工资</td>
+            <td colspan="3"> <input type="text" class="form-control" id="asss"></td>
+            <td>
+                <button class="btn-danger btn-block" onclick="c()">计算</button>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+            <tr bgcolor="#00bfff">
+                <td>险种</td>
+                <td>个人</td>
+                <td>个人</td>
+                <td>公司</td>
+                <td>公司</td>
+            </tr>
+            <tr>
+                <td>养老</td>
+                <td>8%</td>
+                <td><span id="dasd"></span></td>
+                <td>20%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>医疗</td>
+                <td>2%</td>
+                <td></td>
+                <td>6%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>失业</td>
+                <td>0.5%</td>
+                <td></td>
+                <td>1.5%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>工伤</td>
+                <td></td>
+                <td></td>
+                <td>0.5%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>生育</td>
+                <td></td>
+                <td></td>
+                <td>0.8%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>公积金</td>
+                <td>12%</td>
+                <td></td>
+                <td>12%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>合计</td>
+                <td>个人合计</td>
+                <td></td>
+                <td>公司合计</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>总额</td>
+                <td colspan="4"></td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="dev" class="text-center">
+        开发者：中北大学 雷星宇
+    </div>
+</div>
+
+</body>
+</html>
